@@ -1,0 +1,26 @@
+
+				<a data-rel="tooltip" title="Total users" class="well span3 top-block ajax-link" href="#users">
+					<span class="icon32 icon-blu icon-user"></span>
+					<div >Users</div>
+					<div id="totalUsers">{{data.data.users}}</div>
+					<!-- <span class="notification" id="notificationUsers"></span>  --> 
+				</a>
+
+				<a data-rel="tooltip" title="Number of objects stored within the collections" class="well span3 top-block ajax-link" href="#documents">
+					<span class="icon32 icon-green icon-copy"></span>
+					<div >Documents</div>
+					<div id="totalDocuments">{{countDocuments(data)}}</div>
+					<!--<span class="notification yellow" id="notificationDocuments"></span>-->
+				</a>
+				<a data-rel="tooltip" title="Number of files stored within the database" class="well span3 top-block ajax-link" href="#files">
+					<span class="icon32 icon-green icon-save"></span>
+					<div >Files</div>
+					<div id="totalDocuments">{{data.data.files}}</div>
+					<!--<span class="notification yellow" id="notificationDocuments"></span>-->
+				</a>
+				<a data-rel="tooltip" title="Latest stable version available on the BaasBox official site" class="well span3 top-block" href="" target="_blank" id="getLatestVersion">
+					<span class="icon32 icon-blue icon-archive"></span>
+					<div >Latest version</div>
+					<div id="latestVersion">&nbsp;</div>
+					<span class="" id="notificationLatestVersion"></span>
+				</a>

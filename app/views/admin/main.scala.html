@@ -1,0 +1,20 @@
+@(version: String, edition: String)
+<div style="display:none" ng-show="loggedIn" id="mainPage">	
+	@admin.main_.topbar(version,edition)
+		
+		<div class="container-fluid bb-main-container">
+		<div class="row-fluid">
+		@admin.main_.leftmenu(version)
+		@admin.noscript()
+		@admin.main_.content()
+		</div> <!-- /row-fluid -->
+		</div> <!-- /container-fluid -->
+		<div class="modal hide" id="freezeConsole__">
+			<div class="modal-header">
+				<h2>Please wait...</h2>
+			</div>
+			<div class="modal-body">
+			</div>
+		</div>
+
+</div>

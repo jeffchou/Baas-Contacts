@@ -1,0 +1,44 @@
+			<div id="content" class="span10">
+			<div class="row-fluid">
+			<!-- content starts -->
+				@admin.main_.content_.bradcrumbs()
+				<div ng-show="menu=='dashboard'">
+				@admin.main_.content_.dashboard()
+				</div>
+				<div ng-show="menu=='settings'">
+				@admin.main_.content_.settings()
+				</div>
+				<div ng-show="menu=='dbmanager'">
+				@admin.main_.content_.dbmanager_.dbmanager()
+				</div>
+	
+				<div ng-show="menu=='roles'">
+				@admin.main_.content_.roles()
+				</div>				
+				<div ng-show="menu=='users'">
+				@admin.main_.content_.users()
+				</div>
+				<div ng-show="menu=='collections'">
+				@admin.main_.content_.collections()
+				</div>
+				<div ng-show="menu=='documents'">
+				@admin.main_.content_.documents()
+				</div>
+				<div ng-show="menu=='assets'">
+				@admin.main_.content_.assets()
+				</div>		
+			    <div ng-show="menu=='files'">
+				@admin.main_.content_.files()
+				</div>
+                <div ng-show="menu=='permissions'">
+                @admin.main_.content_.permissions()
+                </div>
+                <div ng-show="menu=='push_conf'">
+                @admin.main_.content_.push_conf()
+                </div>
+                <div ng-show="menu=='scripts'">
+                @admin.main_.content_.scripts()
+                </div>
+			<!-- content end -->
+			</div>
+			</div><!--/#content.span10-->

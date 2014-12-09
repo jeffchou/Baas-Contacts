@@ -1,0 +1,84 @@
+@(version: String, edition: String)
+<html>
+<!--
+~ Copyright (c) 2014.
+~
+~ BaasBox - info at baasbox.com
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~ http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+	<head>
+
+        <title>BaasBox v.@version @edition</title>
+		<style>
+			body
+			{
+				text-align: center;
+			}
+			
+			.container
+			{
+				margin-top:15%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2{
+				color:#538378;
+			}
+			.links{
+				padding-top:12px;
+				position:relative;
+			}
+			.links a,.links a:visited,.links a:link{
+				margin:14px 43px 0 0;
+				border:2px solid #eaeaea;
+				padding:18px;
+				font-family:'helvetica';
+				color:#333;
+			}
+			
+			.links a:hover{
+				color:#eaeaea;
+				background-color:#538378;
+				-webkit-transition: color 0.2s linear;
+   				-moz-transition: color 0.2s linear;
+    			-o-transition: color 0.2s linear;
+    			-ms-transition: color 0.2s linear;    
+    			transition: color 0.2s linear;
+    			-webkit-transition: background-color:0.2s linear;
+    			-moz-transition: background-color:0.2s linear;
+    			-o-transition: background-color:0.2s linear;
+    			-ms-transition: background-color:0.2s linear;
+    			transition: background-color:0.2s linear;
+			}
+		</style>
+		<link type="image/x-icon" rel="shortcut icon" href="console/favicon.ico">
+		<link type="image/x-icon" rel="icon" href="console/favicon.ico" />
+	</head>
+	<body>
+		<div class="container">
+			
+				<p>
+					<img src="/console/img/logo_baasbox_lp.png" />
+				</p>
+				<p>
+					<h2>V. @version</h2><h2>@edition</h2>
+				</p>	
+		</div>
+		<div class="links">
+			<a href="http://www.baasbox.com/documentation/" target="_new">Documentation</a>
+			<a href="/console">Administration Login</a>
+		</div>
+	
+	</body>
+</html>

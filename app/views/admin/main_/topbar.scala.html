@@ -1,0 +1,49 @@
+@(version: String, edition: String)
+<!-- topbar starts -->
+
+	@admin.main_.pwdmanagement_.changepwd()
+
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				
+				<div class="mainmenu">
+	        		<div class="menuwrapper">
+	           			 <nav class="menulist">
+	                			<ul class="items">
+									<li><a href="http://www.baasbox.com/download" target="_blank" title="Download">Download</a></li>
+									<li><a href="http://support.baasbox.com" target="_blank" title="Support">Support</a></li>
+									<li><a href="http://www.baasbox.com/version/help/doc/@(version.toLowerCase().replaceAll("-snapshot",""))"" target="_blank" title="Api Reference">Api Reference</a></li>
+									<li><a href="http://www.baasbox.com/tutorial" target="_blank" title="Tutorial">Tutorial</a></li>
+								</ul> 
+												           
+						</nav>
+						<!-- user dropdown starts -->
+						<div class="btn-group pull-right" >						
+							<span id="currentVersion">v. @version @edition</span></a>
+						
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="icon-user"></i><span class="hidden-phone"><span id="username"></span></span>
+							<span class="caret"></span>
+							</a>
+							<ul data-rel="tooltip" title="You profile" class="dropdown-menu">
+								<li><a href="#" class="btn-changepwd">Change Password</a></li>
+								<li class="divider"></li>
+								<li><a class="logout" href="#">Logout</a></li>
+							</ul>
+						</div>
+						<!-- user dropdown ends --> 	
+						<a class="brand" href="http://www.baasbox.com/#home">
+	                    <img class="companylogo" src="img/logo_baasbox_white.png">
+	            	                        </a>  
+	            	</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<!-- topbar ends -->
