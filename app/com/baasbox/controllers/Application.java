@@ -25,7 +25,9 @@ import play.mvc.Result;
 import com.baasbox.BBConfiguration;
 import com.baasbox.IBBConfigurationKeys;
 
+import com.baasbox.controllers.actions.filters.CorsComposition;
 
+@CorsComposition.Cors
 public class Application extends Controller {
   
 	  /***
@@ -52,6 +54,10 @@ public class Application extends Controller {
 	  result.put("edition", BBConfiguration.configuration.getString(IBBConfigurationKeys.API_VERSION));
 	  return ok(result);
   }
+  
+  public static Result preflight(String path) {
+		return ok("");
+	}
   
 
 }
